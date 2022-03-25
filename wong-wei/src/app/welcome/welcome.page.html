@@ -1,0 +1,7 @@
+<ion-content [fullscreen]="true">
+  <ion-slides [options]="slideOpts" #slides>
+    <ion-slide *ngFor="let slide of slideImages" [style.background-image]="'url(' + slide + ')'">
+
+    </ion-slide>
+  </ion-slides>
+</ion-content>
