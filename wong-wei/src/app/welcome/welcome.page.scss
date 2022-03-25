@@ -4,5 +4,21 @@ ion-slides {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: initial;
+    justify-content: left;
+    ion-row {
+      margin: 1vh 0 0 1vh;
+      flex-direction: column;
+      ion-img {
+        height: 10vh;
+        width: 10vh;
+      }
+      ion-label,
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        //color: --var(ion-color-white);
+      }
+    }
   }
 }

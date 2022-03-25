@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-welcome',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomePage implements OnInit {
 
+  @ViewChild('slides') slides: IonSlides;
   slideOpts: any = {};
   slideImages: any[] = [];
 
@@ -14,9 +16,16 @@ export class WelcomePage implements OnInit {
 
   ngOnInit() {
     this.slideImages = [
-      'assets/imgs/1.jpg',
-      'assets/imgs/2.jpg',
-      'assets/imgs/3.jpg',
+
+      'assets/imgs/a1.webp',
+      'assets/imgs/a2.jpg',
+      'assets/imgs/a3.webp',
+      'assets/imgs/a4.jpg',
+      'assets/imgs/b1.jpg',
+      'assets/imgs/b2.jpg',
+      'assets/imgs/b3.webp',
+      'assets/imgs/b4.jpg',
+
     ];
     this.slideOpts = {on: {
       beforeInit() {
@@ -76,5 +85,8 @@ export class WelcomePage implements OnInit {
       },
     }};
   }
-
+ionViewDidEnter() {
+  this.slides.startAutoplay();
 }
+}
+
