@@ -1,0 +1,7 @@
+{
+  "name": "Wong Wei",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
