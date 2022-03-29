@@ -7,7 +7,6 @@ ion-slides {
     align-items: initial;
     justify-content: left;
     ion-row {
-      margin: 1vh 0 0 1vh;
       flex-direction: column;
       ion-img {
         height: 10vh;
@@ -17,8 +16,31 @@ ion-slides {
       p {
         font-size: 1.2rem;
         font-weight: bold;
-        //color: --var(ion-color-white);
+        color: var(--ion-color-white);
       }
     }
   }
 }
+.logo {
+  margin: 1vh 0 0 1vh;
+}
+.authButton {
+  transform: translateY(70vh);
+  ion-button {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+}
+.logoLabel {
+  margin-top: 2vh;
+}
+
+// ion-footer {
+//   ion-toolbar{
+//     --background: transparent;
+//     ion-row{
+//       flex-direction: column;
+//     }
+//   }
+// }
